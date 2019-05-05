@@ -8,11 +8,11 @@ const order = {
 checkInventory(order)
 .then((resolvedValueArray) => {
   // Write the correct return statement here:
- 
+  return processPayment(resolvedValueArray);
 })
 .then((resolvedValueArray) => {
   // Write the correct return statement here:
-  
+  return processPayment(resolvedValueArray);
 })
 .then((successMessage) => {
   console.log(successMessage);
